@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+     <head>
+
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <title>Site pessoal de Wylamys</title>
+        
+        <meta name="description" content="Landing page pessoal do programador Wylamys. Aqui vocé encontrará informações do currículo e portifólio do desenvolvedor de sofware">
+        <meta name="keywords" content="site, pessoal, landing, portfolio, currículo wylamys">
+
+         <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/contato.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+
+     <body>
+         <header>
+            <img class="fotoDePerfil" src="../assets/wylamys imeg.jpeg" alt="">
+            <h1>Wylamys Santos</h1>
+            <h3>Desenvolvedor de Sofware</h3>
+         </header>
+
+         <nav>
+             <ul>
+                 <li class="butoon"><a href="../index.html">currículo</a></li>
+                 <li class="butoon"><a href="portfolio.html">portifólio</a></li>
+                 <li class="butoon"><a href="#">Contato</a></li>
+             </ul>
+         </nav>
+         
+        <main>
+             
+            <form action="">
+                
+              <fieldset>
+                  <label for="input-name">Name</label>
+                  <input type="text" name="input-name" id="input-name" required minlength="2">
+              </fieldset>
+
+              <fieldset>
+                <label for="input-email">Email</label>
+                <input type="email" name="input-email" id="input-email" required>
+              </fieldset>
+
+              <fieldset>
+                <label for="input-tel">Telefone</label>
+                <input type="tel" name="input-tel" id="input-tel" placeholder="(99) 99999-9999" required pattern="^^\(\d{2}\) \d{5}-\d{4}$" maxlength="15">
+                
+              
+              </fieldset>
+
+              <fieldset>
+                <label for="input-msg">Mensagem</label>
+                <textarea name="input-msg" id="input-msg" cols="30" rows="10"></textarea>
+              </fieldset>
+
+              <center>
+                <input type="submit" value="ENVIAR" class="butoon">
+              </center>
+              
+
+            </form>
+
+
+        </main>
+
+         <footer>Desenvolvido com amor por Wylamys Santos S2</footer>
+     </body>
+</html>
