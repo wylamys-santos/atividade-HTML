@@ -1,3 +1,27 @@
+function validarFormulario() {
+    const form = document.querySelector('form');
+    const inputs = form.querySelectorAll('input');
+
+    let isValid = true;
+
+    inputs.forEach(input => {
+        if (!input.checkValidity()) {
+            input.classList.add('invalid');
+            isValid = false;
+        } else {
+            input.classList.remove('invalid');
+        }
+    });
+
+    return isValid;
+}
+
+function enviarFormulario() {
+    if (validarFormulario()) {
+        enviarParaWhatsApp();
+    }
+}
+
 function enviarParaWhatsApp(input) {
     const nome = document.getElementById('input-nome').value;
     const email = document.getElementById('input-email').value;
